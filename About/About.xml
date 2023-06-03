@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Put a unique mod name here</name>
+
+	<author>put your name here</author>
+
+	<packageId>authorname.modname</packageId> <!-- a unique identifier for the mod. Special characters are not allowed, at least one dot is required. This is what gets saved in a player's mod list, and having two identical IDs leads to the mod manager becoming incapable of loading the correct mod. The game internally stores these IDs using lower case characters only -->
+
+	<description>The description of the mod. Avoid having spaces inbetween text and the description tags at the start and end</description>
+
+	<supportedVersions>
+		<li>1.4</li> <!-- Supported versions. Place rimworld versions in separate li nodes here -->
+	</supportedVersions>
+
+	<!-- More information is available here: https://rimworldwiki.com/wiki/Modding_Tutorials/About.xml -->
+</ModMetaData>

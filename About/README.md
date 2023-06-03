@@ -1,0 +1,1 @@
+The About.xml here contains name, ID, author and other information about the mod. Preview.png is the preview image that gets shown on the workshop and the in-game mod manager. Recommended texture dimensions without black bars are 640x360 or 1280x720. The example file is a duck with incorrect dimensions. File names have to be exact.

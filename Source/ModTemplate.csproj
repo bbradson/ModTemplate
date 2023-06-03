@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <Authors>Put your name here</Authors>
+		
+        <!-- <Copyright>Copyright (c) 2023 authorName</Copyright> --> <!-- Optional copyright field -->
+		
+		<!-- <Version>1.2.3</Version> --><!-- Optional. Use this to mark an assembly with a version number of your choice -->
+		
+        <TargetFramework>net48</TargetFramework> <!-- Rimworld only supports 4.7.2, 4.8 and 4.8.1. 5.x or newer and older versions do not work -->
+		
+        <LangVersion>preview</LangVersion> <!-- This is the C# version. Preview is the newest version with the most features -->
+		<!-- Details here: https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/configure-language-version -->
+		
+        <OutputPath>..\Assemblies\</OutputPath> <!-- The output path for dll files  -->
+		
+        <!-- <Nullable>enable</Nullable> --> <!-- Optional nullable analysis. -->
+		<!-- Details here: https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-reference-types -->
+		
+		<!-- Advanced configs. Keep these if you don't have a good reason for changes -->
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <Optimize>true</Optimize>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <EnableNETAnalyzers>True</EnableNETAnalyzers>
+        <AnalysisLevel>preview-all</AnalysisLevel>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>portable</DebugType>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>5</WarningLevel>
+    </PropertyGroup>
+	
+	<!-- Down here we have references to dependencies -->
+    <ItemGroup>
+		<!-- RimWorld itself -->
+        <PackageReference Include="Krafs.Rimworld.Ref" Version="1.4.*"/> <!-- Version="1.4.*" targets the newest stable 1.4 build. -->
+		<!-- To include beta builds, append -* to the version, like this: Version="1.4.*-*" -->
+		<!-- To target a beta version of 1.5, as an example, you'd write this: Version="1.5.*-*" -->
+		
+		<!-- Harmony -->
+        <PackageReference Include="Lib.Harmony" Version="2.*" ExcludeAssets="runtime"/>
+		<!-- https://harmony.pardeike.net/articles/intro.html -->
+		
+		<!-- Certain newer C# features like records require this optional nuget package -->
+		<!-- <PackageReference Include="PolySharp" Version="1.*" /> -->
+		<!-- Details here: https://www.nuget.org/packages/PolySharp/ -->
+		
+		<!-- A package for accessing private members. Optional -->
+        <!-- <PackageReference Include="Krafs.Publicizer" Version="2.*"/> -->
+		<!-- Publicize Include lines like the following are used to specify the members to publicize -->
+        <!-- <Publicize Include="Assembly-CSharp:RimWorld.JobGiver_Haul.TryGiveJob"/> -->
+		<!-- A more advanced example with generics and a nested class is this: -->
+		<!-- <Publicize Include="mscorlib:System.Collections.Generic.Dictionary`2+Entry" /> -->
+		<!-- Details here: https://github.com/krafs/Publicizer -->
+		
+		<!-- The API for zetrith's multiplayer mod. Only required if you wish to support that mod -->
+        <!-- <PackageReference Include="RimWorld.MultiplayerAPI" Version="0.*"/> -->
+		<!-- Details here: https://github.com/rwmt/MultiplayerAPI/wiki -->
+		
+		<!-- The API for zetrith's prepatcher mod. This is an advanced more powerful alternative to Harmony -->
+		<!-- <PackageReference Include="Zetrith.Prepatcher" Version="1.*" /> -->
+		<!-- Details with wiki here: https://github.com/Zetrith/Prepatcher -->
+    </ItemGroup>
+</Project>

@@ -1,0 +1,1 @@
+Place xml files for translations of def nodes, like label or description, here.

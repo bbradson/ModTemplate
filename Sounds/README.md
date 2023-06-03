@@ -1,0 +1,1 @@
+Place sounds here. Supported formats are ogg, mp3 and wav. ogg is recommended. wav is picky with only specific configurations getting loaded correctly.
