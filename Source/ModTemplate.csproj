@@ -12,7 +12,7 @@
         <LangVersion>preview</LangVersion> <!-- This is the C# version. Preview is the newest version with the most features -->
 		<!-- Details here: https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/configure-language-version -->
 		
-        <OutputPath>..\Assemblies\</OutputPath> <!-- The output path for dll files  -->
+        <OutDir>..\Assemblies\</OutDir> <!-- The output path for dll files  -->
 		
         <!-- <Nullable>enable</Nullable> --> <!-- Optional nullable analysis. -->
 		<!-- Details here: https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-reference-types -->
@@ -20,7 +20,6 @@
 		<!-- Advanced configs. Keep these if you don't have a good reason for changes -->
         <PlatformTarget>AnyCPU</PlatformTarget>
         <Optimize>true</Optimize>
-        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
         <EnableNETAnalyzers>True</EnableNETAnalyzers>
         <AnalysisLevel>preview-all</AnalysisLevel>
         <DebugSymbols>true</DebugSymbols>
