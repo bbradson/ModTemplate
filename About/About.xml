@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Put a unique mod name here</name>
-
-	<author>put your name here</author>
-
-	<packageId>authorname.modname</packageId> <!-- a unique identifier for the mod. Special characters are not allowed, at least one dot is required. This is what gets saved in a player's mod list, and having two identical IDs leads to the mod manager becoming incapable of loading the correct mod. The game internally stores these IDs using lower case characters only -->
-
-	<description>The description of the mod. Avoid having spaces inbetween text and the description tags at the start and end</description>
-
+	<name>Dog's utility equipment</name>
+	<author>Chunnyluny</author>
+	<packageId>chunnyluny.utilitydog/packageId>
+<description>Equipment that will be added by this mod:
+<li> Dog bulletproof vest (And variant with Patron's name on it)</li>
+<li> IED sniffing Dog equipment</li>
+<li> Cute detective suit and matching detective hat for dogs.</li> Have you ever wondered why animals in RimWorld have simple clothes, riding gear and flak armour from the animalgear mod? And you are missing more war armour for your four legged companions. Don't hesitate longer! Get your four pawed fur babies protected of warcrimes. The animalgear mod is required to let this mod work. This mod will add textures for bulletproof dog vest which are cheaper and lighter in weight than animal flak amour. An other option for your dogs to wear are the bomb detecting suits. Get the animalgear https://steamcommunity.com/sharedfiles/filedetails/?id=1541438907 when you have subbed to the framework and this mod, you can need animal equipment https://steamcommunity.com/sharedfiles/filedetails/?id=2568865984.</description>
 	<supportedVersions>
-		<li>1.4</li> <!-- Supported versions. Place rimworld versions in separate li nodes here -->
+		<li>1.4</li>
 	</supportedVersions>
-
-	<!-- More information is available here: https://rimworldwiki.com/wiki/Modding_Tutorials/About.xml -->
 </ModMetaData>
