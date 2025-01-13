@@ -21,19 +21,19 @@
 		<PlatformTarget>AnyCPU</PlatformTarget>
 		<Optimize>true</Optimize>
 		<EnableNETAnalyzers>True</EnableNETAnalyzers>
-		<AnalysisLevel>preview-all</AnalysisLevel>
+		<AnalysisLevel>preview-recommended</AnalysisLevel>
 		<DebugSymbols>true</DebugSymbols>
 		<DebugType>portable</DebugType>
 		<ErrorReport>prompt</ErrorReport>
-		<WarningLevel>5</WarningLevel>
+		<WarningLevel>4</WarningLevel>
 	</PropertyGroup>
 
 	<!-- Down here we have references to dependencies -->
 	<ItemGroup>
 		<!-- RimWorld itself -->
-		<PackageReference Include="Krafs.Rimworld.Ref" Version="1.4.*"/> <!-- Version="1.4.*" targets the newest stable 1.4 build. -->
-		<!-- To include beta builds, append -* to the version, like this: Version="1.4.*-*" -->
-		<!-- To target a beta version of 1.5, as an example, you'd write this: Version="1.5.*-*" -->
+		<PackageReference Include="Krafs.Rimworld.Ref" Version="1.5.*"/> <!-- Version="1.5.*" targets the newest stable 1.4 build. -->
+		<!-- To include beta builds, append -* to the version, like this: Version="1.5.*-*" -->
+		<!-- To target a beta version of 1.6, as an example, you'd write this: Version="1.6.*-*" -->
 
 		<!-- Harmony -->
 		<PackageReference Include="Lib.Harmony" Version="2.*" ExcludeAssets="runtime"/>
