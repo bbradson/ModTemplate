@@ -1,0 +1,14 @@
+root = true
+
+[*]
+
+# indent_style = space to use spaces instead of tabs for indentation
+indent_style = tab
+
+# the size of each indent, measured in spaces
+indent_size = 4
+
+# unix style text formatting for best compatibility
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true

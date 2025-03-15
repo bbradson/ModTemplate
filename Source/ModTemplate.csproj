@@ -31,7 +31,7 @@
 	<!-- Down here we have references to dependencies -->
 	<ItemGroup>
 		<!-- RimWorld itself -->
-		<PackageReference Include="Krafs.Rimworld.Ref" Version="1.5.*"/> <!-- Version="1.5.*" targets the newest stable 1.4 build. -->
+		<PackageReference Include="Krafs.Rimworld.Ref" Version="1.5.*"/> <!-- Version="1.5.*" targets the newest stable 1.5 build. -->
 		<!-- To include beta builds, append -* to the version, like this: Version="1.5.*-*" -->
 		<!-- To target a beta version of 1.6, as an example, you'd write this: Version="1.6.*-*" -->
 
